@@ -15,3 +15,4 @@ You could use this logic in a c2 framework or as a standalone payload with a har
 cargo build --release
 ./rpeloader.exe
 ```
+NOTE - the python scripts are included for PoC testing. They are not needed to use the tool.
