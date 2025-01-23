@@ -1,0 +1,26 @@
+[package]
+name = "rpeloader"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "rpeloader"
+path = "src/lib.rs"
+
+[dependencies]
+reqwest = { version = "0.11.17", features = ["json"] }
+serde = { version = "1.0.162", features = ["derive"] }
+serde_json = "1.0.96"
+sysinfo = "0.28.4"
+tokio = { version = "1.28.0", features = ["full"] }
+wmi = "0.12.2"
+zip-extract = "0.1.1"
+
+[profile.release]
+strip = true  # Automatically strip symbols from the binary.
+opt-level = "z"  # Optimize for size.
+lto = true
+codegen-units = 1
+panic = "abort"
