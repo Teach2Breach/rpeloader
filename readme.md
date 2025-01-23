@@ -12,7 +12,6 @@ You could use this logic in a c2 framework or as a standalone payload with a har
 cargo build --release
 ./rpeloader.exe
 ```
-![image](https://github.com/Teach2Breach/keramas/assets/105792760/a60b2e7b-0cd5-49af-8d86-92a88c637b41)
 
 
 
